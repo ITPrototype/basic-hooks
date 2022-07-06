@@ -6,7 +6,6 @@ export default function Hookstate() {
   const handleClick = e => {
     e.preventDefault();
     setMes(inputword)
-    setInputWord('')
   }
   const checkWord = () =>{
     if(inputword === ''){
