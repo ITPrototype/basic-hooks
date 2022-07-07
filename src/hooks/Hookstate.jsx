@@ -6,14 +6,12 @@ export default function Hookstate() {
   const handleClick = e => {
     e.preventDefault();
     setMes(inputword)
-    setInputWord('')
   }
   const checkWord = () =>{
     if(inputword === ''){
       setMes('empty')
     }
   }
-
   useEffect(()=>{
     checkWord()
   },[mes])
@@ -22,8 +20,8 @@ export default function Hookstate() {
       <div>
         <span>Num:{num}</span>
         <div>
-          <button onClick={() => setNum(num + 1)}>Increase</button>
-          <button onClick={() => setNum(num - 1)}>Decrease</button>
+          <button className='btn' onClick={() => setNum(num + 1)}>Increase</button>
+          <button className='btn red' onClick={() => setNum(num - 1)}>Decrease</button>
         </div>
       </div>
       <hr />
@@ -31,8 +29,8 @@ export default function Hookstate() {
       <div>
         <span>Word:{mes}</span>
       </div>
-      <input type="text" value={inputword} onChange={e => { setInputWord(e.target.value) }} />
-        <button onClick={handleClick}>Submit</button>
+        <input type="text" style={{width:'250px'}} value={inputword} placeholder="Enter smth" onChange={e => { setInputWord(e.target.value) }} />
+        <button className='btn blue darken-1' onClick={handleClick}>Submit</button>
     </>
   )
 }

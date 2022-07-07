@@ -43,8 +43,8 @@ export default function Hookeffect() {
         ))}
       </div><br />
       <div>
-        <button onClick={prevpage}>Prev page</button>
-        <button onClick={nextpage}>Next page</button>
+        <button className='btn' onClick={prevpage}>Prev page</button>
+        <button className='btn' onClick={nextpage}>Next page</button>
       </div>
     </>
   )

@@ -18,7 +18,7 @@ export default function Home() {
                 <Hookeffect/>
             </div>
             <hr />
-            <div>
+            <div style={{marginBottom:'20px'}}>
                 <h2 style={{margin:'0'}}>useContext hook</h2>
                 <span style={{color:'gray',marginBottom:'30px',display:'block'}}>Give word with context</span><br />
                 <Hookcontext/>
